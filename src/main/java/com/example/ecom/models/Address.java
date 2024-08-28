@@ -1,8 +1,10 @@
 package com.example.ecom.models;
 
+import jakarta.persistence.Entity;
 import lombok.Data;
 
 @Data
+@Entity
 public class Address extends BaseModel{
     private String building;
     private int floor;
