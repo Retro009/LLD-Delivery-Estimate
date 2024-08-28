@@ -1,6 +1,5 @@
 package com.example.ecom.services;
 
-import com.example.ecom.adapters.GoogleMapsApiAdapter;
 import com.example.ecom.exceptions.AddressNotFoundException;
 import com.example.ecom.exceptions.ProductNotFoundException;
 import com.example.ecom.libraries.MapsApi;
@@ -13,9 +12,11 @@ import com.example.ecom.repositories.DeliveryHubRepository;
 import com.example.ecom.repositories.ProductRepository;
 import com.example.ecom.repositories.SellerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 
+@Service
 public class ProductServiceImpl implements ProductService{
     @Autowired
     private AddressRepository addressRepository;
